@@ -28,7 +28,16 @@ function signOut() {
 
 //Initialize firebase.
 function initFirebase(){
-  // TODO
+  firebase.initializeApp({
+    apiKey: "AIzaSyAuedZJh1shEFvHVTkXkGIhGSbqfwfLzNI",
+    authDomain: "gio-chat.firebaseapp.com",
+    databaseURL: "https://gio-chat.firebaseio.com",
+    projectId: "gio-chat",
+    storageBucket: "gio-chat.appspot.com",
+    messagingSenderId: "171806505106",
+    appId: "1:171806505106:web:9f9b5d413886e186958e4b",
+    measurementId: "G-XTQTX1T5MY"
+  });
 }
 // Initiate firebase auth.
 function initFirebaseAuth() {
@@ -283,19 +292,32 @@ function checkSetup() {
         'sure you are running the codelab using `firebase serve`');
   }
 }
-// Shortcuts to DOM Elements.
-var messageListElement;
-var messageFormElement;
-var messageInputElement;
-var submitButtonElement;
-var imageButtonElement;
-var imageFormElement;
-var mediaCaptureElement;
-var userPicElement;
-var userNameElement;
-var signInButtonElement;
-var signOutButtonElement;
-var signInSnackbarElement;
+// Shortcuts to DOM Elements. --- fix below code w these vars 
+var messageListElement = document.getElementById("message-form")
+var messageFormElement = document.querySelector('#messages')
+var messageInputElement = document.querySelector('#message') 
+var submitButtonElement = document.getElementById("submit")
+var imageButtonElement = document.getElementById("submitImage")
+var imageFormElement = document.getElementById("image-form")
+var mediaCaptureElement = document.getElementById("mediaCapture")
+var userPicElement = document.getElementById("user-pic")
+var userNameElement = document.getElementById("user-name")
+var signInButtonElement = document.getElementById("sign-in")
+var signOutButtonElement = document.getElementById("sign-out")
+var signInSnackbarElement = document.getElementById("must-signin-snackbar")
+
+var btn = document.getElementById("submit")                 //TO DO -- Make a case for no text in the text box
+btn.addEventListener('click', function(){
+  const msg = document.querySelector('#message') 
+  if(msg.value){//MSG is the content within the text box
+    let p = document.createElement("p");                      //On click, make a new paragraph
+    const msgContainer = document.querySelector('#messages')  //MsgContainer is the place messages are posted to
+    p.innerText = msg.value                                   //The content within "p" is set to the value of the text box
+    msgContainer.append(p)     //Append the paragrph to the text box                   
+    msg.value=""                                              //Sets the value to the textbox to nothing
+    console.log(msgContainer, "<<<msgContainer --", "P: ", p) //FOR DEBUGGING
+  } 
+})
 
 // initialize Firebase
 initFirebase();
