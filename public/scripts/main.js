@@ -293,18 +293,18 @@ function checkSetup() {
   }
 }
 // Shortcuts to DOM Elements. --- fix below code w these vars 
-var messageListElement = document.getElementById("message-form")
-var messageFormElement = document.querySelector('#messages')
-var messageInputElement = document.querySelector('#message') 
-var submitButtonElement = document.getElementById("submit")
-var imageButtonElement = document.getElementById("submitImage")
-var imageFormElement = document.getElementById("image-form")
-var mediaCaptureElement = document.getElementById("mediaCapture")
-var userPicElement = document.getElementById("user-pic")
-var userNameElement = document.getElementById("user-name")
-var signInButtonElement = document.getElementById("sign-in")
-var signOutButtonElement = document.getElementById("sign-out")
-var signInSnackbarElement = document.getElementById("must-signin-snackbar")
+var messageListElement = document.getElementById('messages');
+var messageFormElement = document.getElementById('message-form');
+var messageInputElement = document.getElementById('message');
+var submitButtonElement = document.getElementById('submit');
+var imageButtonElement = document.getElementById('submitImage');
+var imageFormElement = document.getElementById('image-form');
+var mediaCaptureElement = document.getElementById('mediaCapture');
+var userPicElement = document.getElementById('user-pic');
+var userNameElement = document.getElementById('user-name');
+var signInButtonElement = document.getElementById('sign-in');
+var signOutButtonElement = document.getElementById('sign-out');
+var signInSnackbarElement = document.getElementById('must-signin-snackbar');
 
 var btn = document.getElementById("submit")                 //TO DO -- Make a case for no text in the text box
 btn.addEventListener('click', function(){
