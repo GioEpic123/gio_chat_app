@@ -17,13 +17,13 @@
 
 // Signs-in Friendly Chat.
 function signIn() {
-  alert('TODO: Implement Google Sign-In');
-  // TODO 1: Sign in Firebase with credential from the Google user.
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider);
 }
 
 // Signs-out of Friendly Chat.
 function signOut() {
-  // TODO 2: Sign out of Firebase.
+  firebase.auth().signOut();
 }
 
 //Initialize firebase.
@@ -41,22 +41,23 @@ function initFirebase(){
 }
 // Initiate firebase auth.
 function initFirebaseAuth() {
-  // TODO 3: Initialize Firebase.
+   // Listen to auth state changes.
+   firebase.auth().onAuthStateChanged(authStateObserver);
 }
 
-// Returns the signed-in user's profile Pic URL.
+// Returns the signed-in user's profile pic URL.
 function getProfilePicUrl() {
-  // TODO 4: Return the user's profile pic URL.
+  return firebase.auth().currentUser.photoURL || '/images/profile_placeholder.png';
 }
 
 // Returns the signed-in user's display name.
 function getUserName() {
-  // TODO 5: Return the user's display name.
+  return firebase.auth().currentUser.displayName;
 }
 
 // Returns true if a user is signed-in.
 function isUserSignedIn() {
-  // TODO 6: Return true if a user is signed-in.
+  return !!firebase.auth().currentUser;
 }
 
 // Saves a new message on the Firebase DB.
@@ -316,6 +317,7 @@ btn.addEventListener('click', function(){
     msgContainer.append(p)     //Append the paragrph to the text box                   
     msg.value=""                                              //Sets the value to the textbox to nothing
     console.log(msgContainer, "<<<msgContainer --", "P: ", p) //FOR DEBUGGING
+    toggleButton()
   } 
 })
 
