@@ -1,5 +1,5 @@
-Gio - Snake - Game -- 
-The Snake no one Wants, but Everyone deserves
+Gio - Chat - 
+The Chat Board that no one Asked for
 =================
 
 
@@ -20,16 +20,20 @@ Project Outline
 
 That's this file, which you are currently reading :)
 
-### ← index.html and index-login.js 
+### ← index.html 
 
 These two files are responsible for the home page of the game, including the log in via Snapchat's Login Kit.
 If you are not added onto my login kitm 
 
-### ← game.html, game.css, and game.js
+### ← main.css
 
 These are responsible for running the snake squad game. game.html relies on game.css for styling and game.js for interactivity. 
 The entirety of the game runs in game.js, with very minimal styling applied to the actual game screen.
 Most of the CSS in this project is for styling the initialization page.
+
+### ← main.js
+
+[Filler Text]
 
 ## Assets
 All Colors are imported from the Google Material Design Lite Stylesheets
