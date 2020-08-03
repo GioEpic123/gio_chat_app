@@ -15,7 +15,6 @@ Theres a green powerup that makes you invincible for 5 seconds! The player's hea
 
 Project Outline
 ------------
----
 
 ### ← README.md -- THIS IS NOT UPDATED, COPIED FROM ANOTHER PROJECT
 
@@ -32,42 +31,14 @@ These are responsible for running the snake squad game. game.html relies on game
 The entirety of the game runs in game.js, with very minimal styling applied to the actual game screen.
 Most of the CSS in this project is for styling the initialization page.
 
-Assets
----
----
+## Assets
+All Colors are imported from the Google Material Design Lite Stylesheets
 
-Background Image for game -- Joel Filipe
-https://unsplash.com/photos/QwoNAhbmLLo
-
-
-Credits
----
----
-This starter code was adapted from Steven Lambert on Github (@straker).
-Code developing and extras by Giovanni Q. @ GioEpic123
-
-Hosted by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
-
-
-
-
-
-
-
-# chat_app_starter
-
-## Directions
-To run this project, you will need to complete the following workshops (found on Notion):
-
-1. Project Intro -- HTML (form and header elements in index.html)
-2. DOM Elements (main.js) 
-3. Firebase initialization, config, and local serving (main.js) 
-4. Firebase authentication (main.js)
-5. Firebase hosting and deploying
-6. Firebase Firestore (main.js)
 
 ## Credits
 This tutorial was adapted from Google Codelab. 
+Code developing and extras by Giovanni Q. @ GioEpic123
+
+Hosted live by Firebase - https://gio-chat.web.app/
+-------------------
+
