@@ -2,7 +2,7 @@ Gio - Chat -
 The Chat Board that no one Asked for
 =================
 
-
+/////NOT UPDATED -- COPIED FROM ANOTHER PROJECT..
 In order to use the Snapchat login and bitmoji functionality on index.html, your Snap username will need to be added 
 to the project on SnapKit. 
 
@@ -16,24 +16,21 @@ Theres a green powerup that makes you invincible for 5 seconds! The player's hea
 Project Outline
 ------------
 
-### ← README.md -- THIS IS NOT UPDATED, COPIED FROM ANOTHER PROJECT
+### ← README.md 
 
 That's this file, which you are currently reading :)
 
 ### ← index.html 
 
-These two files are responsible for the home page of the game, including the log in via Snapchat's Login Kit.
-If you are not added onto my login kitm 
+This is the main file that hosts all of the main elements. It gets manipulated by adding the messages onto it during runtime.
 
 ### ← main.css
 
-These are responsible for running the snake squad game. game.html relies on game.css for styling and game.js for interactivity. 
-The entirety of the game runs in game.js, with very minimal styling applied to the actual game screen.
-Most of the CSS in this project is for styling the initialization page.
+This file handles most of the CSS in the application, since most of the elements come from Google's MDL Framework
 
 ### ← main.js
 
-[Filler Text]
+This code handles the bulk of the work, interfacing with a firebase backend to deploy the website on a firebase server (link below)
 
 ## Assets
 All Colors are imported from the Google Material Design Lite Stylesheets
