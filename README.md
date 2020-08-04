@@ -3,7 +3,7 @@ The Chat Board that no one Asked for
 =================
   Live Site - https://gio-chat.web.app/
   
-  Gio-Chat is an online messageboard app. The app is designed for anyone with a Google account to use with ease! Share'
+  Gio-Chat is an online messageboard app that no one wants. Despite this, the app is designed for anyone with a Google account to use with ease! Share
   messages, photos, and memories, all in one chat board!
   
   This site is built in HTML, utilizing CSS stylesheets, and Javascript functionality.
@@ -48,7 +48,7 @@ This code handles the bulk of the work, interfacing with a firebase backend to d
 The JS in this code handles the loading of previous messages, by reading the contents of Firebase's database and using it to fill out a message template. These templates are then inserted into an element which houses all of the messages, providing the user a scroll ability to navigate sent messages.
 The JS also parses strings in the text field into JSON files with user data and message data, which gets sent to the database via Firebase API. There is also a functioning image-selector, which prompts the user to choose an image from their hard drive, and upload it to the site as a message object. 
 
-Besides core functionality, the JS file also provides the user with a text-counter mechanic that prevents the user to lose their typed message if it exceeds firebase's limit of 300 characters. This gives a real-time update to the user's character count, and will prevent sending messages above them.
+Besides core functionality, the JS file also provides the user with a text-counter mechanic that prevents the user from lose their typed message if it exceeds firebase's limit of 300 characters. This gives a real-time update to the user's character count, and will prevent sending messages above them.
 Another highlight of this project is the dark mode trigger, which changes the color scheme of the website by altering the selected MDL colors of the on-screen elements. The toggle functionality ensures that the user can switch to dark mode whenevever they see fit, at just a click of a switch.
 
 ## Assets
